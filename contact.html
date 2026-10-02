@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - City Care Pharmacy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🏥 City Care Pharmacy</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="medicine.html">Medicines</a>
+            <a href="contact.html" class="active">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="form-box">
+            <h2 style="margin-bottom: 1rem; color: #0b7285; text-align: center;">Contact / Appointment</h2>
+            
+            <form onsubmit="handleContactSubmit(event)">
+                <div class="form-group">
+                    <label for="userName">Unga Peyar:</label>
+                    <input type="text" id="userName" required placeholder="Peyarai type seiyavum">
+                </div>
+
+                <div class="form-group">
+                    <label for="userPhone">Phone Number:</label>
+                    <input type="tel" id="userPhone" required placeholder="Mobile number">
+                </div>
+
+                <div class="form-group">
+                    <label for="userMsg">Thevaiyaana vivaram (Prescription / Query):</label>
+                    <textarea id="userMsg" rows="4" placeholder="Ungal thevaiyaana details inge type pannunga"></textarea>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Anuppavum (Submit)</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 City Care Pharmacy. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
