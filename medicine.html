@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicines - City Care Pharmacy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🏥 City Care Pharmacy</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="medicine.html" class="active">Medicines</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 style="margin-bottom: 1rem; color: #0b7285;">Available Medicines</h2>
+        
+        <input 
+            type="text" 
+            id="searchBar" 
+            class="search-box" 
+            placeholder="Marundhin peyaraal thedavum (e.g. Paracetamol)..." 
+            onkeyup="searchMedicine()"
+        >
+
+        <div class="card-grid" id="medicineList">
+            <div class="card medicine-card">
+                <h3>Paracetamol 500mg</h3>
+                <p>Kaichal mattrum udal valikku.</p>
+                <div class="price">₹25.00 / strip</div>
+                <button class="btn">Buy Now</button>
+            </div>
+
+            <div class="card medicine-card">
+                <h3>Amoxicillin 250mg</h3>
+                <p>Bacterial infection thaduka.</p>
+                <div class="price">₹65.00 / strip</div>
+                <button class="btn">Buy Now</button>
+            </div>
+
+            <div class="card medicine-card">
+                <h3>Cetirizine 10mg</h3>
+                <p>Allergy mattrum jaladhosham nivaaranam.</p>
+                <div class="price">₹18.00 / strip</div>
+                <button class="btn">Buy Now</button>
+            </div>
+
+            <div class="card medicine-card">
+                <h3>Vitamin C Chewable</h3>
+                <p>Udal ethirppu sakthikku.</p>
+                <div class="price">₹45.00 / bottle</div>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 City Care Pharmacy. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
